@@ -30,10 +30,6 @@ export class AudioManager {
     return normalized;
   }
 
-  public async unlock(): Promise<void> {
-    return Promise.resolve();
-  }
-
   public playMiss(): void {
     this.playAudioFile(WRONG_SOUND_URL, {
       startAt: WRONG_SOUND_START,
